@@ -11,6 +11,7 @@ wss.on('connection', function (socket) {
     }, 500);
 
     socket.on('message', (e) => {
+        //client reaches the server through this
         console.log(e.toString());
     });
 });
